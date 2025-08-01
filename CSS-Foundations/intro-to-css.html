@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to CSS</title>
+    <link rel="stylesheet" href="intro-to-css.css">
+    <!--Internal CSS-->
+    <style>
+        div {
+            color: white;
+            background-color: black;
+        }
+
+        p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--Type Selectors: select all elements of the given element type-->
+    <div>Hello, World!</div>
+    <div>Hello again!</div>
+    <p>Hi...</p>
+    <div>Okay, bye.</div>
+
+    <!--Class selector: selects all elements with the given class, which is just an attribute you place on an html element. We can also add multiple number of classes to a single element-->
+    <div class="alert-text">Please agree to our terms of service.</div>
+
+    <!--Id selectors: Similar to class selectors. they select an element with the given id, which is another attribute you place on an HTML element.-->
+    <!--Difference between class and id is that an element can only have one id. It cannot be repeated on a single page and should not contain any whitespace-->
+    <div id="title">My Awesome 90's Page.</div>
+
+    <!--Chaining selectors: another way to use selectors is to chain them as a list without any separation.-->
+    <div class="subsection header">Latest Posts</div>
+    <p class="subsection" id="preview">This is where a preview for a post might go.</p>
+
+    <!--Descendant Combinator: Combinators allow us to combine multiple selectors differently than either grouping or chaining them, as they show a relationship between the selectors. There are four types of combinators in total, but for right now we’re going to only show you the descendant combinator, which is represented in CSS by a single space between selectors. A descendant combinator will only cause elements that match the last selector to be selected if they also have an ancestor (parent, grandparent, etc.) that matches the previous selector.-->
+    <div class="ancestor">
+        <!--A-->
+        <div class="contents">
+            <!--B-->
+            <div class="contents"><!--C--></div>
+        </div>
+    </div>
+    <div class="contents"><!--D--></div>
+
+    <!--Inline CSS-->
+    <div style="color: white; background-color: black;">Hello></div>
+</body>
+</html>

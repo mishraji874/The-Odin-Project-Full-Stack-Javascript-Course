@@ -1,0 +1,95 @@
+/* Universal Selector: selects all elements in the document */
+* {
+    color: purple;
+}
+
+/* Type Selector: selects all elements of the given element type */
+div {
+    color: black;
+}
+
+/* Class Selector: selects all elements with the given class */
+.alert-text {
+    color: red;
+}
+
+/* Id Selector: selects an element with the given id */
+#title {
+    background-color: red;
+}
+
+/*Grouping Selectors: allows you to apply the same styles to multiple selectors */
+.read {
+  color: white;
+  background-color: black;
+  /* several unique declarations */
+}
+
+.unread {
+  color: white;
+  background-color: black;
+  /* several unique declarations */
+}
+
+/*Both our .read and .unread selectors share the color: white; and background-color: black; declarations, but otherwise have several of their own unique declarations. To cut down on the repetition, we can group these two selectors together as a comma-separated list:*/
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+.read {
+  /* several unique declarations */
+}
+
+.unread {
+  /* several unique declarations */
+}
+
+/* Chaining Selectors: another way to use selectors is to chain them as a list without any separation */
+.subsection.header {
+    color: red;
+}
+
+.subsection#header {
+    color: blue;
+}
+
+/* Descendant Selectors: selects elements that are descendants of a specified element */
+.ancestor .contents {
+    color: green;
+}
+
+/*Properties*/
+/*Color and Background Color: used to set the text color and background color of an element*/
+p {
+  /* hex example: */
+  color: #1100ff;
+}
+
+p {
+  /* rgb example: */
+  color: rgb(100, 0, 127);
+}
+
+p {
+  /* hsl example: */
+  color: hsl(15, 82%, 56%);
+}
+
+/* Typography basics and text-align
+
+font-family can be a single value or a comma-separated list of values that determine what font an element uses.  */
+
+/* font-size will, as the property name suggests, set the size of the font. When giving a value to this property, the value should not contain any whitespace, e.g. font-size: 22px has no space between “22” and “px”. */
+
+/*font-weight affects the boldness of text, assuming the font supports the specified weight. This value can be a keyword, e.g. font-weight: bold, or a number between 1 and 1000, e.g. font-weight: 700 (the equivalent of bold). Usually, the numeric values will be in increments of 100 up to 900, though this will depend on the font.
+
+text-align will align text horizontally within an element, and you can use the common keywords you may have come across in word processors as the value for this property, e.g. text-align: center.*/
+
+/*Image height and width: By default, an <img> element’s height and width values will be the same as the actual image file’s height and width. If you wanted to adjust the size of the image without causing it to lose its proportions, you would use a value of “auto” for the height property and adjust the width value: */
+img {
+    height: auto;
+    width: 500px;
+}
+

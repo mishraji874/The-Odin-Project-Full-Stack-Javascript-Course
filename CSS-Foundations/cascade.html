@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cascade</title>
+    <link rel="stylesheet" href="cascade.css">
+</head>
+<body>
+    <!--In the example below, both rules are using only class selectors, but rule 2 is more specific because it is using more class selectors, so the color: red declaration would take precedence.-->
+    <div class="main1">
+        <div class="list1 subsection1">Red text</div>
+    </div>
+
+    <!--In the example below, despite rule 2 having more class selectors than ID selectors, rule 1 is more specific because ID beats class. In this case, the color: blue declaration would take precedence.-->
+    <div class="main2">
+        <div class="list2" id="subsection2">Blue text</div>
+    </div>
+
+    <!--In this final example, the first rule uses an ID selector, while the second rule combines an ID selector with a class selector. Therefore, neither rule is using a more specific selector than the other. The cascade then checks the number of each selector type. Both rules have only one ID selector, but rule 2 has a class selector in addition to the ID selector, so rule 2 has a higher specificity!
+    While the color: red declaration would take precedence, the background-color: yellow declaration would still be applied since there’s no conflicting declaration for it.-->
+    <div class="main3">
+        <div class="list3" id="subsection3">Red text on yellow background</div>
+    </div>
+
+    <!--Inheritance: Inheritance refers to certain CSS properties that, when applied to an element, are inherited by that element’s descendants, even if we don’t explicitly write a rule for those descendants. Typography-based properties (color, font-size, font-family, etc.) are usually inherited, while most other properties aren’t.
+
+    The exception to this is when directly targeting an element, as this always beats inheritance:-->
+    <div id="parent">
+        <div id="child">Text</div>
+    </div>
+</body>
+</html>
