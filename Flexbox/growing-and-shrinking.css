@@ -1,0 +1,30 @@
+.flex-container1 {
+    display: flex;
+}
+
+.flex-container1 div {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 100px;
+    flex: 1 1 0; /* Grow and shrink, initial size is 0 */
+}
+
+.flex-container1 .two1 {
+    flex: 2 1 0%; /* Grow twice as fast, shrink, initial size is 0 */
+}
+
+.flex-container2 {
+    display: flex;
+}
+
+.flex-container2 div {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 100px;
+    width: 250px;
+    flex: 1 1 auto; /* Grow and shrink, initial size is auto */
+}
+
+.flex-container2 .two2 {
+    flex-shrink: 0; /* Do not shrink */
+}
