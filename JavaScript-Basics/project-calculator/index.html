@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div class="calculator">
+      <div class="screen"></div>
+      <div class="keypad">
+        <div class="firstLine">
+          <button class="button" onclick="clicking(1)">1</button>
+          <button class="button" onclick="clicking(2)">2</button>
+          <button class="button" onclick="clicking(3)">3</button>
+          <button class="button" onclick="clicking('+')">+</button>
+        </div>
+        <div class="secondLine">
+          <button class="button" onclick="clicking(4)">4</button>
+          <button class="button" onclick="clicking(5)">5</button>
+          <button class="button" onclick="clicking(6)">6</button>
+          <button class="button" onclick="clicking('-')">-</button>
+        </div>
+        <div class="thirdLine">
+          <button class="button" onclick="clicking(7)">7</button>
+          <button class="button" onclick="clicking(8)">8</button>
+          <button class="button" onclick="clicking(9)">9</button>
+          <button class="button" onclick="clicking('/')">/</button>
+        </div>
+        <div class="fourthLine">
+          <button class="button" onclick="clicking('*')">*</button>
+          <button class="button" onclick="clicking(0)">0</button>
+          <button class="button" onclick="clicking('=')">=</button>
+          <button class="button" onclick="clicking('.')">clear</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
