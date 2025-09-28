@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4-Tables</title>
+    <link rel="stylesheet" href="4-tables.css" />
+  </head>
+  <body>
+    <table> <!--table tag used for declaring the table in the page-->
+      <tr> <!--tr means table row-->
+        <th>First Header</th> <!--th means table head-->
+        <th>Second Header</th>
+      </tr>
+      <tr>
+        <td>This is a data cell</td> <!--td means table data-->
+        <td>This is also a data cell</td>
+      </tr>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th id="clothes" colspan="3">Clothes</th> <!--colspan attribute is used to make a cell span across multiple columns-->
+        </tr>
+        <tr>
+          <th></th>
+          <th></th>
+          <th id="trousers" headers="clothes">Trousers</th>
+          <th id="skirts" headers="clothes">Skirts</th>
+          <th id="dresses" headers="clothes">Dresses</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th id="belgium" rowspan="2">Belgium</th> <!--rowspan attribute is used to make a cell span across multiple rows-->
+          <th id="antwerp" headers="belgium">Antwerp</th>
+          <td headers="belgium antwerp clothes trousers">56</td>
+          <td headers="belgium antwerp clothes skirts">22</td>
+          <td headers="belgium antwerp clothes dresses">43</td>
+        </tr>
+        <tr>
+          <th id="ghent" headers="belgium">Ghent</th>
+          <td headers="belgium ghent clothes trousers">41</td>
+          <td headers="belgium ghent clothes skirts">17</td>
+          <td headers="belgium ghent clothes dresses">35</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
