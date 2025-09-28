@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7-CSS-Functions</title>
+    <link rel="stylesheet" href="7-css-functions.css" />
+</head>
+
+<body>
+    <!--
+    calc(): The most powerful use cases for calc include:
+
+    Mixing units
+    The ability to nest calc( calc () - calc () )
+    -->
+
+    <div id="container">
+        <header id="header">
+            < header />
+        </header>
+        <main id="mainContent">
+            < main content />
+        </main>
+        <footer id="footer">
+            < footer />
+        </footer>
+    </div>
+
+    <!--
+    min(): min() does an excellent job of helping us create responsive websites. Take a look at this example:
+    -->
+
+    <div id="text">resize me by clicking in the bottom right</div>
+    <div id="container">
+        <img id="iconHolder" src="https://avatars.githubusercontent.com/u/4441966?s=200&v=4" alt="odin" />
+    </div>
+
+    <!--
+    max()
+
+Max works the same way as min, only in reverse. It will select the largest possible value from within the parentheses. You can think of max() as ensuring a minimum allowed value for a property.
+
+Consider the following property of a given element:
+
+width: max(100px, 4em, 50%);
+
+From this list of given sizes, max() will select the largest one. As long as 4em or 50% result in lengths longer than 100px, max() will select (the bigger) one of them. If they are smaller than 100px (maybe as a cause of user’s font size preferences, or their browser’s window size or zoom level), then 100px will win out as the largest. You can think of 100px in this example as a guard value: width here won’t ever be set to less than 100px.
+
+The max function is most useful when the viewing window is either exceptionally small, or the user increases the content size by using the browser’s zoom feature. You may not find a lot of use for max at first, but it is a good tool to be aware of for projects where accessibility is important.
+    -->
+
+    <!--
+    clamp()
+
+clamp() is a great way to make elements fluid and responsive. clamp() takes 3 values:
+
+h1 {
+  font-size: clamp(320px, 80vw, 60rem);
+}
+
+    the smallest value (320px)
+    the ideal value (80vw)
+    the largest value (60rem)
+
+The clamp() CSS function uses these values to set the smallest value, ideal value and largest value. In the above example, this would mean the smallest acceptable font-size would be 320px and the largest would be 60rem. The ideal font-size would be 80vw.
+    -->
+</body>
+
+</html>
