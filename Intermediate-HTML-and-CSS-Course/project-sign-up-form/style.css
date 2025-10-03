@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Bristle Radiant DEMO VERSION';
+    src: url('fonts/BristleRadiantDEMOVERSION.woff2') format('woff2'),
+        url('fonts/BristleRadiantDEMOVERSION.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cycha Cockie';
+    src: url('fonts/CychaCockie-Regular.woff2') format('woff2'),
+        url('fonts/CychaCockie-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    width: 1300px;
+}
+
+.footer {
+    color: rgb(255, 255, 255);
+    align-self: flex-end;
+    font-size: 0.9em;
+    padding-bottom: 10px;
+}
+
+.footer a {
+    color: white;
+}
+
+.background-img {
+    height: 900px;
+    width: 37%;
+    background-image: url("Images/emils.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.odin-logo-bg {
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    top: 23%;
+    background: rgb(2 2 2 / 60%);
+    /*for opacity */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.odin-logo {
+    font-size: 5rem;
+    font-family: 'Cycha Cockie', serif;
+}
+
+.form-side {
+    width: 63%;
+    margin: 0;
+}
+
+.introduction {
+    height: 37%;
+    background-color: #f7f8f8;
+}
+
+.introduction>div {
+    font-weight: bold;
+    margin: 0;
+    padding-left: 45px;
+    font-size: 1.4rem;
+    max-inline-size: 55ch;
+}
+
+.first-para {
+    padding-top: 170px;
+}
+
+.first-para+div {
+    padding-top: 20px;
+}
+
+form {
+    padding-left: 48px;
+    font-family: sans-serif;
+    height: 30%;
+    padding-top: 5px;
+}
+
+.form-container {
+    display: flex;
+}
+
+.form-container div label {
+    display: block;
+}
+
+.fname-email-pwd {
+    margin-right: 125px;
+}
+
+input {
+    margin-bottom: 25px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #E5E7EB;
+    width: 130%;
+}
+
+label {
+    font-size: 0.7em;
+    letter-spacing: 1.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.sign-up-side {
+    height: 29%;
+    background-color: #f7f8f8;
+    padding-left: 48px;
+    padding-top: 30px;
+    box-shadow: inset 0px 5px 6px -3px #8A9DA8;
+}
+
+button {
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    width: 26%;
+    margin-bottom: 30px;
+    color: white;
+    background-color: rgb(109, 145, 44);
+    border: 1px solid rgb(109, 145, 44);
+}
+
+button+div {
+    font-size: 1.15em;
+}
+
+.sign-up-side a {
+    color: rgb(109, 145, 44);
+    text-decoration: none;
+}
+
+.sign-up-side a:hover {
+    text-decoration: underline;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+input[type="password"]:focus {
+    border: none;
+}
+
+input[type="email"]:invalid {
+    outline: 1px solid red;
+
+}
+
+input:focus {
+    outline: 1px solid rgb(3, 3, 252);
+    box-shadow: 5px 5px 7px -2px #8A9DA8;
+}
+
+button:hover {
+    background-color: rgb(55, 105, 21);
+}

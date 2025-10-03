@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-img">
+        <div class="odin-logo-bg">
+            <img src="images/odin-lined.png" alt="odin logo" height="115px" width="85px">
+            <span class="odin-logo">ODIN</span>
+        </div>
+        <div class="footer">Photo by <a
+                href="https://unsplash.com/@ejn?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                Emils Nemse </a> on <a
+                href="https://unsplash.com/photos/lush-vibrant-green-ferns-fill-the-image-nVRfVVKPfD8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                Unsplash</a>
+        </div>
+    </div>
+
+    <div class="form-side">
+        <div class="introduction">
+            <div class="first-para">
+                This is not a real online service! You know you need something like this in your life to help you
+                realize you deepest dreams. Sign-up <em>now</em> to get started!
+            </div>
+            <div>You <em>know</em> you want to.</div>
+        </div>
+
+        <form action="">
+            <h2>Let's do this!</h2>
+            <div class="form-container">
+                <div class="fname-email-pwd">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+
+                <div>
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="Phone Number" required>
+
+                    <label for="conf-pwd">CONFIRM PASSWORD</label>
+                    <input type="password" id="conf-pwd" name="conf-pwd" placeholder="Confirm Password" required>
+                </div>
+            </div>
+        </form>
+        <div class="sign-up-side">
+            <button type="submit">Create Account</button>
+            <div>Already have an account? <a href="">Log in</a></div>
+        </div>
+    </div>
+</body>
+
+</html>
