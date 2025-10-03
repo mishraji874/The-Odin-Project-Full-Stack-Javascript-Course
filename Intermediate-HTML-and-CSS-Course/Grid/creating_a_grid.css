@@ -1,0 +1,59 @@
+.container {
+    display: grid;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px;
+}
+
+.container3 {
+    display: grid;
+    grid-template: 50px 50px / 250px 50px 50px;
+}
+
+.container4 {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+}
+
+.container5 {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+}
+
+.container5 > div {
+    border: 1px solid blue;
+}
+
+.container6 {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+    column-gap: 10px;
+}
+
+.container6 > div {
+    border: 1px solid blue;
+}
+
+.container7 {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+    column-gap: 10px;
+    row-gap: 100px;
+}
+
+.container7 > div {
+    border: 1px solid blue;
+}
