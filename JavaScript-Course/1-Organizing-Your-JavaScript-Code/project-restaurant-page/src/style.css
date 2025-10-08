@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://img.freepik.com/premium-photo/italian-food-with-ingredients_1220-4854.jpg?semt=ais_hybrid&w=740&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin: 20px;
+}
+
+#header-text {
+  font-family: cursive;
+  color: orangered;
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-left: 360px;
+}
+
+.title:hover {
+  transform: translateY(-5px);
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+  padding: 10px 250px;
+}
+
+.button {
+  color: white;
+  font-family: cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: orangered;
+  transform: translateY(-5px);
+}
